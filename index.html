@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GeoJSON</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="shortcut icon" type="image/x-icon" href="sun_cloud.ico">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+<style>
+    body { margin: 0; padding: 0; }
+    #map {width: 100%; height: 400px;}
+    h1 { text-align: center; }
+    .search { margin: 0 0 10px; text-align: center; }
+    .search > input { height: 30px; width: 150px;}
+    .search > button { height: 37px; width: 80px; border: none;}
+</style>
+</head>
+<body>
+    <h1>Buscar Por ZipCodes</h1>
+    <div class="search">
+        <input name="inpState" id="inpState" type="text" placeholder="Buscar por Estado">
+        <input name="inpZipCode" id="inpZipCode" type="text" placeholder="Buscar por zipcode">
+        <button id="btnSearch">Buscar</button>
+    </div>
+    
+    <div id="map"></div>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
